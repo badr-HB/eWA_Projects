@@ -1,0 +1,167 @@
+@media (min-width: 430px) and (max-width: 810px) {
+
+    .bar span,
+    li,
+    button {
+        display: none;
+    }
+    .container{
+        display: none;
+        width: 170px;
+    }
+    .menulogo {
+        display: block;
+        margin-left: 130px;
+    }
+
+    nav {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navlogo {
+        margin: -10px auto auto -80px;
+    }
+
+    .header-child {
+        height: 937px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        margin-top: -10px;
+    }
+
+    .box h1 {
+        font-size: 54px;
+    }
+
+    .box p {
+        width: 364px;
+        text-align: start;
+    }
+
+    .Get-for-free,
+    .Learn-more {
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .box div {
+        display: flex;
+        align-items: center;
+    }
+
+    .cylinder,
+    .half-torus {
+        display: none;
+    }
+
+    .vurtel {
+        width: 388px;
+        height: 388px;
+        margin-top: 0px;
+        margin-left: -35px;
+    }
+
+    .Logos {
+        overflow: scroll;
+        width: 390px;
+    }
+
+    .motivation button {
+        display: block;
+        justify-self: center;
+    }
+
+    .motivation h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .motivation p {
+        text-align: center;
+    }
+
+    .marketing {
+        width: 384px;
+        height: 238px;
+    }
+
+    .torus,
+    .pyramid {
+        display: none;
+    }
+
+    .gradientbackground {
+        height: 1570px;
+    }
+
+    .menu {
+        display: grid;
+    }
+
+    #container button {
+        display: block;
+    }
+
+    #container div {
+        display: flex;
+        align-items: center;
+    }
+
+    .flex {
+        display: grid;
+        justify-content: center;
+    }
+
+    .flex div{
+        width: 70%;
+    }
+    .Testimonials {
+        display: grid;
+    }
+
+    .emojistar,
+    .helix2 {
+        display: none;
+    }
+
+    .element-older-child {
+        margin-left: 30px;
+    }
+
+    .element-younger-child {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 70px;
+    }
+
+    .element-younger-child div {
+        margin-top: 0px;
+    }
+
+    .element {
+        display: grid;
+        height: 1200px;
+    }
+
+    .company-logos {
+        display: none;
+    }
+
+    .company-logos2 {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .company-logos2 img {
+        margin-left: 13px;
+    }
+}
