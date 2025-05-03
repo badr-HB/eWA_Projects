@@ -1,0 +1,253 @@
+@media (min-width: 393px) and (max-width: 395px) {
+    :root{
+        --text-color-light-mode: black;
+    }
+    .dash_board {
+        display: none;
+    }
+
+    .ResponsiveNavBar {
+        display: block;
+        width: 369px;
+    }
+
+    .ResponsiveNavBarChild {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .time {
+        font-family: "Inter", sans-serif;
+        font-weight: 590;
+        font-size: 17px;
+        line-height: 22px;
+        width: 139px;
+        display: flex;
+        justify-content: center;
+        color: var(--text-color-light-mode);
+    }
+
+    .TITLES {
+        display: block;
+        margin-left: 8px;
+        color: var(--text-color-light-mode);
+    }
+
+    .TITLES div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .TITLES p {
+        font-family: "Inter", sans-serif;
+        font-weight: 590;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.43px;
+    }
+
+    section {
+        left: 0px;
+    }
+
+    .dash_board_header {
+        display: none;
+    }
+
+    .Overview_Section {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, auto);
+        width: 393px;
+        gap: 8px;
+    }
+
+    .countainer {
+        width: 160px;
+        height: 100px;
+    }
+
+    .countainerblack {
+        width: 160px;
+        height: 100px;
+    }
+
+    .CountainerChild {
+        margin: 16px 16px 0px 16px;
+    }
+
+    .CountainerChild2 {
+        margin: 4px 16px 16px 16px;
+    }
+
+    .numberstyle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .percentagestyle,
+    .textstyle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .responsive {
+        display: flex;
+        justify-content: center;
+        width: 393px;
+    }
+
+    .Graphs_and_Charts {
+        width: 361px;
+        height: 240px;
+    }
+
+    #GraphInformations {
+        display: none;
+    }
+
+    .collector {
+        margin: 0px 0px 0px 12px;
+    }
+
+    .collector div p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .drawing {
+        display: block;
+    }
+
+    #graphic {
+        display: none;
+    }
+
+    #columns {
+        display: block;
+    }
+
+    .TrafficDiv {
+        display: block;
+        width: 362px;
+    }
+
+    .Device_Traffic {
+        width: 350px;
+        border-radius: 16px;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .Device_Traffic .InputHolder {
+        display: none;
+    }
+
+    .DeviceGraphs {
+        gap: 13px;
+    }
+
+    .vertical_bar,
+    .vertical_bar_locations {
+        width: 40px;
+    }
+
+    .DeviceGraphs div {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .StatictisNumber {
+        width: 25px;
+    }
+
+    #DeviceGraphsResponsiveEdition {
+        gap: 19px;
+    }
+
+    .TrafficDiv {
+        display: flex;
+        flex-direction: column;
+        width: 393px;
+        justify-content: center;
+    }
+
+    .Product_Traffic {
+        width: 336px;
+    }
+
+    .Product_Traffic_Header {
+        display: block;
+    }
+
+    .Product_Traffic_Header .InputHolder,
+    .Projects_wrapper .InputHolder {
+        display: none;
+    }
+
+    .columns {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .Product_wrapper div {
+        margin: 0px;
+    }
+
+    .Projects_Section {
+        width: 393px;
+    }
+
+    .ManagersNames {
+        width: 224px;
+    }
+
+    .Dates,
+    .ManagersNames .title,
+    .Status .title {
+        display: none;
+    }
+
+    .StyleGray,
+    .StyleWhite {
+        width: 191px;
+    }
+
+    .StyleGrayStatus,
+    .StyleWhiteStatus {
+        width: 105px;
+    }
+
+    .foot {
+        display: none;
+    }
+
+    .footchild {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .responsiveFoot {
+        width: 393px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footchild div {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color-light-mode);
+    }
+    .Projects_wrapper,.Product_Traffic_Header{
+        width: 345px;
+    }
+}

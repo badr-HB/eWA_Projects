@@ -1,0 +1,41 @@
+
+@keyframes dash{
+    from{
+        transform: translateY(300px)
+        
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes move{
+    from{
+        height: 30%;
+    }
+    to{
+        height: 100%;
+    }
+}
+@keyframes up_to_down{
+    from{
+    transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.vertical_bar{
+    animation:  move 2s linear;
+}
+.vertical_bar_locations{
+    animation:  move 2s linear;
+}
+.graph_section path{
+
+  animation: dash 3s ease-in-out ;
+
+}
+.columns path{
+    animation: up_to_down 3s linear;
+}
+
