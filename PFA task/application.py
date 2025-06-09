@@ -1,10 +1,5 @@
 from flask import Flask, render_template, request, redirect, session, flash, g, url_for
-from werkzeug.security import generate_password_hash, check_password_hash
-import sqlite3
 import mysql.connector
-import os
-from datetime import timedelta
-
 app = Flask(__name__)
 
 
