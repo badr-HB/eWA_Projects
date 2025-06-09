@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+<head>
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/folder.css')}}">
+    {% endblock %}
+</head>
+
+<body>
+    {% block main_content %}
+    <img src="{{url_for('static',filename='img/add-folder.png')}}" alt="add folder icon" width="120" height="120"
+        title="add new folder" id="AddFolderIcon" onclick="move()">
+    <!----------------------create popup-------------------->
+    <div class="PoPup">
+        <div class="PoPup_div_child">
+            <p>Please add a file to continue</p>
+            <form action="/folder/submit" method="post" id="folderForm">
+                <input type="text" placeholder="File name" id="InputFolderName" name="folder_name">
+                <div>
+                    <button type="submit" onclick="removePoPup()" id="cancelbutton">cancel</button>
+                    <button type="submit" onclick="addFolder(event)">add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-------------------------success popup--------------------------->
+    <div class="success_popup">
+        <div class="success_child">
+            <p>Folder added successfully</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="green" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9 12l2 2l4-4" />
+            </svg>
+            <br>
+            <button type="submit" onclick="removesuccessPoPup()">OK</button>
+        </div>
+    </div>
+    <!-----------------------get folders names----------------------------------------->
+    <div class="folders">
+        {% for add in folder %}
+        <div class="folder_child">
+            <img src="{{url_for('static',filename = 'img/folder.png')}}" alt="folder added" width="120" height="120">
+            <p>{{ add[0] }}</p>
+            <form action="/folder/submit/delete" id="deleteForm" method="post">
+                <input type="hidden" name="DeleteButton" value="{{ add[0] }}">
+                <button>delete</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+    {% if alert == 'true' %}
+    <div class="alert">
+        <input type="hidden" id="alertinput" value="1">
+    </div>
+    {% endif %}
+
+    {% endblock %}
+
+    <!--------------------------java script---------------------------------->
+    {% block extra_js %}
+    <script src="{{url_for('static',filename='js/folder.js')}}"></script>
+    {% endblock %}
+</body>

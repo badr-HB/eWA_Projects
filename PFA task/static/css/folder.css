@@ -1,0 +1,103 @@
+img {
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.bounce {
+    transform: scale(0.78);
+}
+
+/* style popup */
+.PoPup,
+.success_popup {
+    width: 390px;
+    height: 220px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.show-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.PoPup_div_child,
+.success_child {
+    width: 260px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.PoPup_div_child p,
+.PoPup_div_child input,
+.success_child p,
+.success_child svg,
+#deleteForm {
+    margin-bottom: 24px;
+}
+
+.PoPup_div_child p,
+.success_child p {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.PoPup_div_child input {
+    padding: 8px 21px;
+    background-color: lightgray;
+    border-radius: 12px;
+    border: none;
+}
+
+.PoPup_div_child input::placeholder {
+    color: black;
+    padding: 8px 21px;
+    font-weight: 600;
+}
+
+.PoPup_div_child button,
+.success_child button {
+    padding: 7px 16px;
+    border-radius: 14px;
+    border: none;
+}
+
+.PoPup_div_child button:hover {
+    color: #ffffff;
+    background-color: black;
+    cursor: pointer;
+}
+
+.success_child button:hover {
+    color: #ffffff;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* folders display style */
+.folders {
+    width: 500px;
+    margin: 30px 70px auto 90px;
+    display: grid;
+    grid-template-columns: repeat(6, 24%);
+    gap: 52px;
+    text-align: center;
+}
+
+.folders p {
+    font-weight: 600;
+    font-size: 19px;
+}
