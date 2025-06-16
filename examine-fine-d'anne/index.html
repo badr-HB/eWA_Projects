@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="NavFirstChild">
+            <div>
+                <li type="1">
+                    <ul>
+                        <h1 style="color: black;">sneakers</h1>
+                    </ul>
+                    <ul>Collections</ul>
+                    <ul>Men</ul>
+                    <ul>Women</ul>
+                    <ul>About</ul>
+                    <ul>Contact</ul>
+                </li>
+            </div>
+        </div>
+        <div class="images_section">
+            <img src="/examine-fine-d'anne/images/icon-cart.svg" alt="cart icon" class="cart" onclick="cart()">
+            <img src="/examine-fine-d'anne/images/image-avatar.png" alt="avatar" class="avatar" width="44px">
+        </div>
+    </nav>
+    <div class="hr">
+    </div>
+
+    <header>
+        <div id="cart">
+            <p>Cart</p>
+            <hr>
+            <p>your cart is empty</p>
+        </div>
+        <div class="main_content">
+            <div class="images_section">
+                <div class="header_image_section">
+                    <img src="/examine-fine-d'anne/images/image-product-1.jpg" alt="" width="390px" height="420px"
+                        class="shoe_img">
+                </div>
+                <div class="mini_images">
+                    <img src="/examine-fine-d'anne/images/image-product-1-thumbnail.jpg" alt="" height="90px"
+                        width="90" onclick="changepic()">
+                    <img src="/examine-fine-d'anne/images/image-product-2-thumbnail.jpg" alt="" height="90px"
+                        width="90" onclick="changepic1()">
+                    <img src="/examine-fine-d'anne/images/image-product-3-thumbnail.jpg" alt="" height="90px"
+                        width="90" onclick="changepic2()">
+                    <img src="/examine-fine-d'anne/images/image-product-4-thumbnail.jpg" alt="" height="90px"
+                        width="90" onclick="changepic3()">
+                </div>
+            </div>
+            <div class="textANDbtns">
+                <p>Sneaker Company</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div>
+                <p>$125.00</p>
+                <p>50%</p>
+                </div>
+                <del>$250.00</del>
+                <div class="increase_dicrease">
+                    <span onclick="decraese()">-</span>0<span onclick="increase()">+</span>
+                </div>
+                <button onclick="buyproduct()">Add to cart</button>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
