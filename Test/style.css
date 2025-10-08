@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Nunito", "SF Pro Rounded", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.GreatParent{
+    display: flex;
+    justify-content: space-around;
+
+}
+.GrandParent{
+    align-content: center;
+}
+.parent{
+    width: 388px;
+    height: 537px;
+    position: relative;
+}
+.Welcome h1 {
+    font-weight: 600;
+    font-size: 36px;
+}
+.Welcome p{
+    color: #313957;
+    font-weight: 400;
+    size: 20px;
+    margin-bottom: 48px;
+}
+.Sign_up p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+#forgotPass,button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.forgotPass{
+    position: relative;
+    height: 50px;
+}
+#forgotPass{
+    position: absolute;
+    right: 0;
+}
+.forgot{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 48px;
+}
+input{
+    width: 388px;
+    height: 48px;
+    border: 1px solid #D4D7E3;
+    border-radius: 12px;
+    background-color: #D4D7E3;
+}
+button{
+    width: 388px;
+    height: 52px;
+    justify-content: space-between;
+    background-color: #162D3A;
+    border: solid 1px transparent;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+#text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #959CB6;
+    text-align: center;
+    margin-top: 137px;
+}
+img{
+    border: solid 1px transparent;
+    border-radius: 24px;
+}

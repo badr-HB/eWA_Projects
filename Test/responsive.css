@@ -1,0 +1,51 @@
+@media (max-width: 391px) {
+    body{
+        margin-top: 24px;
+        justify-items: center;
+    }
+    .GreatParent {
+        flex-direction: column-reverse;
+    }
+    .parent{
+        width: 342px;
+        justify-content: center;
+    }
+    img {
+        width: 342px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .Welcome h1 {
+        font-size: 24px;
+    }
+
+    .Welcome p {
+        font-size: 15px;
+    }
+
+    .Sign_up p {
+        font-size: 14px;
+    }
+
+    input {
+        width: 342px;
+        height: 42px;
+        border-radius: 8px;
+    }
+
+    #forgotPass {
+        font-size: 14px;
+    }
+    button{
+        width: 342px;
+        height: 44px;
+        border-radius: 12px;
+    }
+    .forgot{
+        font-size: 16px;
+    }
+    #text{
+        font-size: 14px;
+    }
+}
