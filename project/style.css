@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/Frame\ 4.png);
+    background-size: 1480px 320px;
+    background-repeat: no-repeat;
+    background-color: #F8EEFF;
+    height: 780px;
+}
+.GreatParent{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.GrandParent{
+    height: 605px;
+    width: 600px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 16px;
+}
+.parent{
+    width: 520px;
+    background-color: #FFFFFF;
+    border: solid 1px transparent;
+    border-radius: 16px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.title h1{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+.child div p{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #301534;
+}
+.child div img{
+    position: absolute;
+    right: 0;
+}
+#exception{
+    font-family: "Work Sans", sans-serif;
+    color: #8B6990;
+    font-size: 16px;
+    font-weight: 400;
+}
+.child div{
+    display: flex;
+    align-items: center;
+}
+.child div img{
+    z-index: 5;
+}
+#border{
+    border: solid 1px #F8EEFF;
+}
