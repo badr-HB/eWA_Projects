@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="w-screen h-screen">
+        <div class="w-screen h-screen flex  justify-around items-center">
+            <div class="flex flex-col justify-center w-[388px] gap-6">
+                <h1 class="font-semibold text-4xl font-[font-family: 'Varela Round', sans-serif;]">Welcome Back 👋</h1>
+                <p class="font-[font-family: 'DM Serif Display', serif;] font-normal text-xl">Today is a new day. It's
+                    your day. You shape it. Sign in to start managing your projects.</p>
+                <div class="gap-2">
+                    <p class="font-[font-family: 'Roboto', sans-serif;] text-base font-normal">Email</p>
+                    <input id="email" type="email" placeholder="Example@email.com"
+                        class="border border-[#D4D7E3] w-[388px] h-12 rounded-xl bg-[#D4D7E3]">
+                    <p class="font-[ont-family: 'Roboto', sans-serif;] text-base font-normal">Password</p>
+                    <input id="Password" type="password" placeholder="At least 8 characters"
+                        class="border border-[#D4D7E3] w-[388px] h-12 rounded-xl bg-[#D4D7E3]">
+                </div>
+                <div class="relative h-4">
+                    <p class="font-[font-family: 'Roboto', sans-serif;] font-normal text-base text-[#1E4AE9] absolute right-0 cursor-pointer">
+                        Forgot
+                        Password?</p>
+                </div>
+                <button class="w-[388px] h-[52px] rounded-xl border text-white bg-[#162D3A] cursor-pointer" onclick="check()">Sign in</button>
+                <p class="font-[font-family: 'Roboto', sans-serif;] font-normal text-lg text-[#122B31] text-center cursor-pointer">
+                    Don't you have
+                    an account? <span class="text-[#1E4AE9]">Sign up</span></p>
+                <p
+                    class="font-[font-family: 'Roboto', sans-serif;] font-normal text-lg text-[#959CB6] mt-28 text-center">
+                    © 2023 ALL
+                    RIGHTS RESERVED</p>
+            </div>
+            <div>
+                <img src="./img/992dfb2830a38887b0559dfb619dc9eba940a887.jpg" alt=""
+                    class="w-[47.22vw] h-[94.39vh] rounded-3xl object-cover">
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
