@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="w-screen h-10 bg-[#0E1422] flex items-center justify-center">
+            <p class="text-white font-[Inter]">Get 25% OFF on your first order.</p>
+            <button class="text-white font-[Inter]"><a href="">Order Now</a></button>
+        </div>
+        <nav class="w-screen h-[84px] flex items-center justify-center gap-[103px]">
+            <div class="flex items-center gap-[6.5px]">
+                <img src="img/Logo/Logomark.png" alt="">
+                <p class="font-extrabold font-[Manrope] text-[#0E1422] text-[20px]">Ecommerce</p>
+            </div>
+            <div class="flex items-center gap-[32px]">
+                <a href="#" class="font-[Inter] font-medium text-[#5C5F6A] text-[14px]">Home</a>
+                <div class="w-[106px] h-[25px] flex items-center gap-2">
+                    <a href="#" class="font-[Inter] font-medium text-[#5C5F6A] text-[14px]">Categories</a>
+                    <img src="img/Chevron Down.png" alt="">
+                </div>
+                <a href="#" class="font-[Inter] font-medium text-[#5C5F6A] text-[14px]">About</a>
+                <a href="#" class="font-[Inter] font-medium text-[#5C5F6A] text-[14px]">Contact</a>
+            </div>
+            <div class="flex items-center gap-[32px]">
+                <div class="w-[264px] h-[45px] border border-[#878A92] rounded-[6px] py-[15px] px-[10px] flex gap-2">
+                    <img src="img/Search.png" alt="">
+                    <input type="text" placeholder="Search products">
+                </div>
+                <img src="img/Icon.png" alt="">
+                <img src="img/User.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="mb-[220px]">
+        <div class="w-screen h-40 gap-2 px-[201px] py-[34.5px] bg-[#F6F6F6]">
+            <h1 class="font-[Inter] font-bold text-[24px] text-[#0E1422]">Cart</h1>
+            <div class="flex items-center gap-[1px]">
+                <p class="font-[Inter] font-medium text-[14px] text-[#5C5F6A]">Ecommerce</p>
+                <img src="img/Chevron Right.png" alt="">
+                <p class="font-[Inter] font-medium text-[14px]">Cart</p>
+            </div>
+        </div>
+        <!----------------------------------------------------------------------------------------->
+        <div class="flex justify-center mt-[56px] gap-[122px]">
+            <div>
+                <p class="font-[Inter] font-semibold text-[16px] mb-[18px]">Your cart</p>
+                <div class="border w-[628px] h-px text-[#E9E9EB] mb-[48px]"></div>
+                <div class="flex flex-col gap-10">
+                    <div class="flex items-center gap-[106px]">
+                        <div class="flex items-center gap-[32px]">
+                            <img src="img/a8e669c28e2c1947b16876117a87f3867e55e8e1.png" alt="" width="44px"
+                                height="62px" class="border border-transparent p-[11px] bg-[#F6F6F6] rounded-[4px]">
+                            <div>
+                                <p class="font-[Inter] font-medium text-[14px] text-[#0E1422]">Raw Black T-Shirt Lineup
+                                </p>
+                                <div class="flex items-center gap-2">
+                                    <p class="font-[Inter] font-medium text-[12px] text-[#5C5F6A]">Color:</p>
+                                    <div class="border w-4 h-4 rounded-[50%] border-transparent bg-[#98BE9E]"></div>
+                                    <div class="border border-transparent w-4 h-px bg-[#5C5F6A]"></div>
+                                    <p class="font-[Inter] font-medium text-[12px] text-[#5C5F6A]">Size:M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <p class="font-[Inter] font-medium text-[14px]">$75.00</p>
+                            <div
+                                class="w-[107px] h-10 border border-[#E6E7E8] rounded-[4px] flex items-center justify-center gap-[10px]">
+                                <button class="cursor-pointer" onclick="minus1()">-</button>
+                                <p class="font-medium text-[14px] font-[Inter]">1</p>
+                                <button class="cursor-pointer" onclick="plus1()">+</button>
+                            </div>
+                            <div class="w-10 h-10 rounded-[4px] bg-[#F6F6F6] flex items-center justify-center">
+                                <button class="text-[20px] cursor-pointer">X</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------>
+                    <div class="flex items-center gap-[144px]">
+                        <div class="flex items-center gap-[32px]">
+                            <img src="img/cc73aa4a0e8af69dd454db02bbfa89c8b3be4f4a.png" alt="" width="44px"
+                                height="62px" class="border border-transparent p-[11px] bg-[#F6F6F6] rounded-[4px]">
+                            <div>
+                                <p class="font-[Inter] font-medium text-[14px] text-[#0E1422]">Essential Neutrals</p>
+                                <div class="flex items-center gap-2">
+                                    <p class="font-[Inter] font-medium text-[12px] text-[#5C5F6A]">Color:</p>
+                                    <div class="border w-4 h-4 rounded-[50%] border-transparent bg-[#A8B2FF]"></div>
+                                    <div class="border border-transparent w-4 h-px bg-[#5C5F6A]"></div>
+                                    <p class="font-[Inter] font-medium text-[12px] text-[#5C5F6A]">Size:M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <p class="font-[Inter] font-medium text-[14px]">$22.00</p>
+                            <div
+                                class="w-[107px] h-10 border border-[#E6E7E8] rounded-[4px] flex items-center justify-center gap-[10px]">
+                                <button class="cursor-pointer" onclick="minus2()">-</button>
+                                <p class="font-medium text-[14px] font-[Inter]">1</p>
+                                <button class="cursor-pointer" onclick="plus2()">+</button>
+                            </div>
+                            <div class="w-10 h-10 rounded-[4px] bg-[#F6F6F6] flex items-center justify-center">
+                                <button class="text-[20px] cursor-pointer">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <div
+                class="w-[341px] h-fit px-6 pt-8 pb-10 border border-[#E6E7E8] rounded-[4px] flex flex-col relative gap-8">
+                <p class="font-[Inter] font-semibold text-[16px]">Order Summary</p>
+                <div class="flex items-center gap-[180px]">
+                    <p>Subtotal</p>
+                    <p id="change">$97.00</p>
+                </div>
+                <div class="flex items-center gap-[180px]">
+                    <p>Shipping:</p>
+                    <p>Free</p>
+                </div>
+                <div class="flex items-center gap-[220px]">
+                    <p>Tax:</p>
+                    <p>$3.00</p>
+                </div>
+                <div class="w-[293px] h-px border border-[#E6E7E8]"></div>
+                <div class="flex items-center gap-[200px]">
+                    <p>Total</p>
+                    <p>$100.00</p>
+                </div>
+                <button
+                    class="bg-[#0E1422] font-[Inter] font-semibold text-[14px] px-[24px] py-[12px] rounded-[4px] text-white">Checkout</button>
+                <a class="font-[Inter] font-medium text-[12px] underline cursor-pointer text-center">Continue
+                    Shopping</a>
+            </div>
+        </div>
+    </main>
+    <footer class="w-screen h-[443px] bg-[#F6F6F6]">
+        <div class="flex justify-center items-center h-full">
+            <div class="w-[272px] h-[160px] flex flex-col gap-[32px]">
+                <div class="flex flex-col gap-[12px]">
+                    <div class="flex items-center">
+                        <img src="img/Logo/Logomark5.png" alt="">
+                        <p class="font-extrabold font-[Manrope] text-[#0E1422] text-[20px]">Ecommerce</p>
+                    </div>
+                    <p class="font-[Inter] font-regular text-[14px] text-[#5C5F6A]">DevCut is a YouTube channel for
+                        practical project-based learning.</p>
+                </div>
+                <div class="flex gap-8">
+                    <img src="img/Ecommerce (1)/Social Icons/Github.png" alt="">
+                    <img src="img/Ecommerce/Social Icons/Instagram.png" alt="">
+                    <img src="img/Ecommerce/Social Icons/Youtube.png" alt="">
+                </div>
+            </div>
+            <div class="flex gap-[72px]">
+                <div class="flex flex-col gap-10 mr-[98px]">
+                    <p>SUPPORT</p>
+                    <div class="flex flex-col gap-4">
+                        <p>FAQ</p>
+                        <p>Terms of use</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                    <p>COMPANY</p>
+                    <div class="flex flex-col gap-4">
+                        <p>About us</p>
+                        <p>Contact</p>
+                        <p>Careers</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                    <p>SHOP</p>
+                    <div class="flex flex-col gap-4">
+                        <p>My Account</p>
+                        <p>Checkout</p>
+                        <p>Cart</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-10 ml-[159px]">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <div class=" flex gap-[20px]">
+                        <img src="img/Colored Icons/Mastercard.png" alt="">
+                        <img src="img/Colored Icons/Amex.png" alt="">
+                        <img src="img/Colored Icons/Visa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center bg-[#F6F6F6]">
+            <div class="w-[1000px] h-xp border border-[#E9E9EB]"></div>
+            <p class="font-[Inter] font-regular text-[14px] text-[#5C5F6A]">© 2023 DevCut. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
